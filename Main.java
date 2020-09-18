@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
         BmiService service = new BmiService();
-        float weightKg = 60;
+        float weightKg;
         float heightM;
-        heightM = 1.6f;
-        float bmi = service.calculate();
+
+        float bmi = service.calculate(weightKg = 60, heightM = 1_6);
         System.out.println(bmi);
     }
 }

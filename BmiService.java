@@ -1,8 +1,9 @@
 public class BmiService {
-    public float calculate() {
-        float weightKg = 60;
-        float heightM = 1.6f;
+    public float calculate(float weightKg, float heightM) {
+
         float growthSquared = heightM * heightM;
-        return (float) (weightKg / growthSquared);
+        float bmi = weightKg / growthSquared;
+
+        return bmi;
     }
 }
